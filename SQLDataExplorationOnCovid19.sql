@@ -1,7 +1,8 @@
 /*
     Data Exploration on Covid 19 Dataset
 */
-
+--Link to Dataset: https://ourworldindata.org/covid-deaths
+--Main csv file was separated into two distinct csv files that were imported into Oracle APEX
 /*
     Table 'covd' as Covid Deaths
     Table 'covv' as Covid Vaccinations
