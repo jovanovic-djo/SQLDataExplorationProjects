@@ -1,5 +1,5 @@
 /*
-    Data exploration on movies Dataset      ==>   Source: Kaggle
+    Data exploration on movies Dataset       ==>   Source: Kaggle
 */
 
 --Selecting everything from table movies
