@@ -77,6 +77,12 @@ from movies
 group by company
 order by average_runtime desc
 
+--Production company overall rating
+select company, round(sum(score)/count(name), 2) as average_rating
+from movies
+where score is not null
+group by company
+order by average_rating desc
 
 
 
