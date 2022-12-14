@@ -87,10 +87,17 @@ order by average_rating desc
 --Total profit of production companies
 select company, sum(gross) as total_gross, sum(budget) as total_budget, sum(gross)-sum(budget) as profit
 from movies
---In order to select distinct year we can insert this here: where year = '2000'
+--In order to select distinct year we can insert this here: 
+--where year = '2000'
 group by company
 having sum(gross)-sum(budget) is not null 
 order by profit desc
 
-
+--Total number of main roles(star of the movie titles) per movie star
+select star, count(star) as star_score
+from movies
+--We can set year value like: 
+--where year = '2000'
+group by star
+order by star_score desc
 
